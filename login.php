@@ -5,7 +5,7 @@
 	include 'dbconst.php';
 
 	if (isset($_SESSION['user_id'])) {
-		header("Location: dashboard?user=".$_SESSION['user_id']);
+		header("Location: dashboard.php?user=".$_SESSION['user_id']);
 	}
 
 	if (isset($_POST['email']) && isset($_POST['password'])) {
